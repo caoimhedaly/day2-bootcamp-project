@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <img class="owl" src="owl.jpg">
+
+    <style>
+        .box,
+        .owl,
+        .box2 {
+            animation: movingbox 1s infinite;
+            background: linear-gradient(to bottom, red, white);
+            border-radius: 50%;
+            height: 200px;
+            left: 80%;
+            /*padding-top: 70px;*/
+            position: absolute;
+            top: 20%;
+            width: 200px;
+        }
+
+        .box2 {
+            background: blue;
+            left: 50%;
+
+        }
+
+        .owl {
+            animation: movingowl 5s infinite;
+            width: 100px;
+            height: 100px;
+        }
+
+
+        @keyframes movingbox {
+            0% {
+                top: 80%;
+                transform: rotate(0deg);
+            }
+            50% {
+                top: 0%;
+                transform: rotate(-180deg);
+            }
+
+            100% {
+                top: 80%;
+                transform: rotate(0deg);
+            }
+
+
+        }
+
+        @keyframes movingowl {
+            0% {
+                left: 80%;
+                transform: rotate(0deg);
+            }
+            50% {
+                left: 0%;
+                transform: rotate(-180deg);
+            }
+
+            100% {
+                left: 80%;
+                transform: rotate(0deg);
+            }
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <img class="owl" src="images/owl.jpg"></img>
+</body>
+
+</html>
